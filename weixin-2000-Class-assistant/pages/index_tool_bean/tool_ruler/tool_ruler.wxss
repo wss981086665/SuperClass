@@ -1,0 +1,34 @@
+/* pages/index_tool_bean/tool_ruler/tool_ruler.wxss */
+.calibration {
+  width: 220rpx;
+  height:80rpx;
+  border-radius: 10rpx;
+  margin: 0 auto;
+  margin-top: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  background-color: rgb(201, 201, 201);
+}
+.cal-tip {
+  width: 100%;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 12px;
+  color: rgb(92, 92, 92);
+}
+.return {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  position: fixed;
+  right: 20rpx;
+  bottom: 20rpx;
+}
+.retutn-img {
+  width: 100%;
+  height: 100%;
+}

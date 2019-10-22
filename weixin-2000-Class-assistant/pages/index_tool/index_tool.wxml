@@ -1,0 +1,56 @@
+<!--pages/index_tools/index_tools.wxml-->
+<view>
+  <!-- 学习小工具 -->
+  <view class="tool-con">
+    <view class="tool-tip">学习小工具</view>
+    <view class="tool-list">
+      <view class="tool-bean">
+        <image class='bean-img' src='../../image/ruler.png' bindtap="useRuler"></image>
+        <view class='bean-text'>度量尺</view>
+      </view>
+      <view class="tool-bean">
+        <image class='bean-img' src='../../image/paper.png' bindtap="usePaper"></image>
+        <view class='bean-text'>绘画板</view>
+      </view>
+      <view class="tool-bean">
+        <image class='bean-img' src='../../image/binary.png' bindtap="useBinary"></image>
+        <view class='bean-text'>进制换算</view>
+      </view>
+      <view class="tool-bean"></view>
+      <view class="tool-bean"></view>
+      <view class="tool-bean"></view>
+    </view>
+  </view>
+
+  <!-- 生活小工具 -->
+  <view class="tool-con">
+    <view class="tool-tip">生活小工具</view>
+    <view class="tool-list">
+      <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+        <view class="tool-bean">
+          <image class='bean-img' src='../../image/timing.png' bindtap="useTiming"></image>
+          <view class='bean-text'>计时器</view>
+        </view>
+      </picker>
+      <view class="tool-bean">
+        <image class='bean-img' src='../../image/calendar.png'></image>
+        <view class='bean-text'>万年历</view>
+      </view>
+      <view class="tool-bean">
+        <image class='bean-img' src='../../image/compass.png' bindtap="useCompass"></image>
+        <view class='bean-text'>指南针</view>
+      </view>
+      <view class="tool-bean">
+        <image class='bean-img' src='../../image/weather.png'></image>
+        <view class='bean-text'>天气</view>
+      </view>
+      <view class="tool-bean">
+
+      </view>
+      <view class="tool-bean">
+        <image class='bean-img' src='../../image/dish.png' bindtap="useDish"></image>
+        <view class='bean-text'>菜品识别</view>
+      </view>
+    </view>
+  </view>
+</view>

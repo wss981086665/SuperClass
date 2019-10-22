@@ -1,0 +1,156 @@
+.userinfo {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  padding-top: 15vh;
+  background-color: #6A5ACD;
+}
+.tip-con{
+  width: 74%;
+  height: 55%;
+  padding-top: 3%;
+  position: fixed;
+  top: 20%;
+  left: 13%;
+  overflow: hidden;
+  border-radius: 30rpx;
+  animation: anmi1 1s;
+  background-color: #6A5ACD;
+  box-shadow: 0 0 5px 0 white;
+}
+.tip-text{
+  width: 100%;
+  height: 70rpx;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  animation: anmi2 1.2s;
+  line-height: 70rpx;
+  text-align: center;
+}
+.tip-context{
+  width: 92%;
+  color: white;
+  font-size: 18px;
+  animation: anmi2 1.5s;
+  margin: 0 auto;
+}
+.tip-text2{
+  width: 100%;
+  height: 70rpx;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  animation: anmi5 1s;
+  line-height: 70rpx;
+  text-align: center;
+}
+.tip-context2{
+  width: 92%;
+  color: white;
+  font-size: 18px;
+  animation: anmi5 1s;
+  margin: 0 auto;
+}
+.name{
+  width: 91%;
+  padding-left: 3%;
+  height: 70rpx;
+  margin: 0 auto;
+  margin-top: 15rpx;
+  animation: anmi4 1.2s;
+  background-color: rgba(255, 255, 255, 0.253);
+}
+.pclass{
+  color: white;
+  animation: anmi2 1.2s;
+}
+.login{
+  width: 110%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #6A5ACD;
+  color: white;
+  border-radius: 0;
+  position: absolute;
+  bottom: -3rpx;
+  left: -5%;
+}
+.prev{
+  width: 160rpx;
+  height: 70rpx;
+  border-radius: 30rpx;
+  color: white;
+  font-size: 15px;
+  line-height: 70rpx;
+  text-align: center;
+  position: fixed;
+  top: 13%;
+  left: 13%;
+  box-shadow: rgba(182, 182, 182, 0.25) 0px 1px 0px, inset rgba(255,255,255,0.25) 0px 1px 0px, inset rgba(0,0,0,0.25) 0px 0px 0px, inset rgba(255,255,255,0.03) 0px 20px 0px, inset rgba(0,0,0,0.15) 0px -20px 20px, inset rgba(255,255,255,0.05) 0px 20px 20px;
+}
+.tip-con2{
+  width: 74%;
+  height: 55%;
+  padding-top: 3%;
+  position: fixed;
+  top: 20%;
+  left: 13%;
+  overflow: hidden;
+  border-radius: 30rpx;
+  animation: anmi3 1s;
+  background-color: #6A5ACD;
+  box-shadow: 0 0 5px 0 white;
+}
+
+
+@keyframes anmi1{
+  from{
+    height: 0;
+  }
+  to{
+    height: 55%;
+  }
+}
+@keyframes anmi2{
+  from{
+    color: #6A5ACD;
+  }
+  to{
+    color: white;
+  }
+}
+@keyframes anmi5{
+  0%{
+    color: #6A5ACD;
+  }
+  90%{
+    color: #6A5ACD;
+  }
+  100%{
+    color:white;
+  }
+}
+@keyframes anmi3{
+  from{
+    width: 0;
+    left: 50%;
+  }
+  to{
+    width: 74%;
+    left: 13%;
+  }
+}
+@keyframes anmi4{
+  from{
+    background-color: #6A5ACD;
+  }
+  to{
+    background-color: rgba(255, 255, 255, 0.253);
+  }
+}

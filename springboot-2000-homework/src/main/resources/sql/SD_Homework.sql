@@ -1,0 +1,25 @@
+-- alter table SD_Homework AUTO_INCREMENT=1;
+
+-- SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for SD_Homework
+-- ----------------------------
+-- DROP TABLE IF EXISTS `SD_Homework`;
+-- CREATE TABLE `SD_Homework` (
+--   `id` int(11) NOT NULL AUTO_INCREMENT,
+--   `code` varchar(11) DEFAULT NULL,        -- 作业代码
+--   `classid` varchar(11) DEFAULT NULL,     -- 班级代码
+--   `imgurl` varchar(50) DEFAULT NULL,      -- 图片地址
+--   `openid` varchar(50) DEFAULT NULL,      -- openid
+--   `topic` varchar(50) DEFAULT NULL,       -- 题目
+--   `content` varchar(600) DEFAULT NULL,    -- 内容
+--   `date` varchar(20) DEFAULT NULL,        -- 发布日期
+--   `isDelete` INT(2) DEFAULT 0,            -- 是否已删除
+--   `factor1` varchar(50) DEFAULT NULL,
+--   `factor2` varchar(50) DEFAULT NULL,
+--   `factor3` varchar(50) DEFAULT NULL,
+--   `factor4` varchar(50) DEFAULT NULL,
+--   `factor5` varchar(50) DEFAULT NULL,
+--   PRIMARY KEY (`id`)
+-- ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;

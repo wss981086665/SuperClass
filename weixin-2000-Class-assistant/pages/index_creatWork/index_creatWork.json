@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "布置作业",
+  "navigationBarBackgroundColor": "#6A5ACD",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "i-message": "../../dist/message/index"
+  }
+}

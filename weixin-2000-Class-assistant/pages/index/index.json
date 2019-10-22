@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "i-tag": "../../dist/tag/index",
+    "i-message": "../../dist/message/index"
+  },
+  "navigationBarTitleText": "超级课堂汇",
+  "navigationBarBackgroundColor": "#6A5ACD",
+  "navigationBarTextStyle": "white"
+}

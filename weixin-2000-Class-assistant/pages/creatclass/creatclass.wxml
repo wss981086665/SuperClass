@@ -1,0 +1,7 @@
+<view>
+  <view class='container'>
+    <view class='tip'>请输入信息</view>
+    <input class='input course' placeholder='请输入班级名称' bindinput='courseinput' maxlength='15'></input>
+  </view>
+  <view class='creat-class' bindtap='creatit'>点击创建</view>
+</view>

@@ -1,0 +1,4 @@
+<!--pages/index_tool_bean/index_compass/index_compass.wxml-->
+<view class="tip direction">{{direction}}</view>
+<view class="tip angle">{{angle}}°</view>
+<image class="img-i" src="../../../image/theCompass.png" style="transform: rotate({{rotate}}deg);"></image>

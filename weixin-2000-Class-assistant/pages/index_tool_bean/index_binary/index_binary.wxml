@@ -1,0 +1,16 @@
+<view class="con">
+    <view class="con-text">二进制</view>
+    <input class="con-input" value="{{value2}}" placeholder="二进制数据" bindinput="input2"/>
+</view>
+<view class="con">
+  <view class="con-text">八进制</view>
+  <input class="con-input" value="{{value8}}" placeholder="八进制数据" bindinput="input8"/>
+</view>
+<view class="con">
+  <view class="con-text">十进制</view>
+  <input class="con-input" value="{{value10}}" placeholder="十进制数据" bind:change="input10"/>
+</view>
+<view class="con">
+  <view class="con-text">十六进制</view>
+  <input class="con-input" value="{{value16}}" placeholder="十六进制数据" bindinput="input16"/>
+</view>

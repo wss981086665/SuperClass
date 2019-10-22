@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    username: '这里就没必要看了吧'
+    password: '你的密码谁知道呢'
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.106.242.51:3306/homework
+
+    schema:
+#     - classpath:sql/SD_Homework.sql
+#     - classpath:sql/SD_Reply.sql
+#     - classpath:sql/teacher.sql
+#     - classpath:sql/SD_Course.sql
+#     - classpath:sql/SD_Relation.sql
+#     - classpath:sql/SD_User.sql
+
+  http:
+    multipart:
+      enabled: true                           # 默认支持文件上传
+      file-size-threshold: 0                  # 支持文件写入磁盘
+      location: /workplace/data/appData/temp  # 上传文件临时目录
+      max-file-size: 10MB                     # 最大支持文件大小
+      max-request-size: 100MB                 # 最大支持请求大小
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+server:
+  port: 8082
+  ssl:
+      key-store: classpath:1343113_www.xztywss.top.pfx
+      key-store-password: g1Fq3Apq
+      key-store-type: PKCS12

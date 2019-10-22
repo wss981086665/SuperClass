@@ -1,0 +1,52 @@
+<view>
+  <view class="back-ti" style="border-left:{{screenWidth}}px solid #6A5ACD;"></view>
+  
+  <view class='userinfo'>
+    <view class="top">
+      <view class='head'>
+        <image class="headimg" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      </view>
+      <view class='username'>{{userInfo.nickName}}</view>
+      <view class='autograph'>
+        <label class='autograph-text'>实名: {{user.name}}</label>
+      </view>
+    </view>
+  </view>
+
+  <view class='middle-con'>
+    <view class='middle'>
+      <view class='middles middle-left'>
+          <view class='middle-button'>
+            <image class="middle-img" src="../../image/creat.png" bindtap='fun1' mode="cover"></image>
+            <view class='middle-text'>已布置</view>
+          </view>
+      </view>
+      <view class='middles middle-middle'>
+          <view class='middle-button'>
+            <image class="middle-img" src="../../image/class2.png" mode="cover" bindtap='tocreat'></image>
+            <view class='middle-text'>创建班级</view>
+          </view>
+      </view>
+      <view class='middles middle-right'>
+          <view class='middle-button'>
+            <image class="middle-img" src="../../image/class2.png" mode="cover"></image>
+            <view class='middle-text'>文章检索</view>
+          </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='item_choice' bindtap='applyteacher'>认证教师
+    <image class="direction-img" src="../../image/direction.png" mode="cover"></image>
+  </view>
+  <view class='item_choice' bindtap="clearCache">清理缓存
+    <image class="direction-img" src="../../image/direction.png" mode="cover"></image>
+  </view>
+
+  <view class='item_choice'>联系我们
+    <image class="direction-img" src="../../image/direction.png" mode="cover"></image>
+  </view>
+  <view class='item_choice'>使用手册
+    <image class="direction-img" src="../../image/direction.png" mode="cover"></image>
+  </view>
+</view>

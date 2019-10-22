@@ -1,0 +1,9 @@
+<view>
+  <view class='view-top'>您正在查看<text class='view-top-text'>{{name}}</text>的解答内容</view>
+  <view class='con-img'  hidden='{{!hasimage}}'>
+    <image src="{{answer.imgurl}}" data-src="{{answer.imgurl}}" class='con-img-img' bindtap='previewImage' mode='aspectFill'></image>
+  </view>
+  <view class='reply-tip'>解答内容</view>
+  <view class='content'>{{answer.content}}</view>
+  <!-- <view class='evaluate'>评分</view> -->
+</view>

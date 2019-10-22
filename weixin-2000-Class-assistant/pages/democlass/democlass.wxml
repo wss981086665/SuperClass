@@ -1,0 +1,14 @@
+<view> 
+  <view class="userinfo">
+   
+    <view class='tip-con'>
+      <view class='tip-text'>{{democlass.classname}}</view>
+      <view class='tavatarUrl'>
+        <image class='ava-img' src='{{democlass.con1}}'></image>
+      </view>
+      <view class='teacher'>教师:{{teacher.con2}}</view>
+      <button class='login' bindtap='addclass'>添加班级</button>
+    </view>
+    
+  </view>
+</view>

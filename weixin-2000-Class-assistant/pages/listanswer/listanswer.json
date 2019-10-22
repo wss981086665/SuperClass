@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "已提交",
+  "navigationBarBackgroundColor": "#6A5ACD",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,118 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.8.3",
+	"appid": "wxd4c54893e1e4ed01",
+	"projectname": "weixin-2000-Class-assistant",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 8,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/index_tool/index_tool",
+					"pathName": "pages/index_tool/index_tool",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index_tool_bean/tool_ruler/tool_ruler",
+					"pathName": "pages/index_tool_bean/tool_ruler/tool_ruler",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index_tool_bean/tool_paper/tool_paper",
+					"pathName": "pages/index_tool_bean/tool_paper/tool_paper",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index_tool_bean/index_ binary/index_ binary",
+					"pathName": "pages/index_tool_bean/index_ binary/index_ binary",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index_tool_bean/index_ phoneBook/index_ phoneBook",
+					"pathName": "pages/index_tool_bean/index_ phoneBook/index_ phoneBook",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index_tool_bean/index_timing/index_timing",
+					"pathName": "pages/index_tool_bean/index_timing/index_timing",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index_tool_bean/index_compass/index_compass",
+					"pathName": "pages/index_tool_bean/index_compass/index_compass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index_tool_bean/index_dish/index_dish",
+					"pathName": "pages/index_tool_bean/index_dish/index_dish",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index_creatWork/index_creatWork",
+					"pathName": "pages/index_creatWork/index_creatWork",
+					"scene": null
+				}
+			]
+		}
+	}
+}

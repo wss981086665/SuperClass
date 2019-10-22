@@ -1,0 +1,72 @@
+<!--index.wxml-->
+<view>
+
+<view class='seachcontainer' bindtap='goSearch'>搜索作业</view>
+  <view class='userinfo'>
+    <view class="top">
+      <view class='top-left'>
+        <view class='top-left-top'>2019.8.20</view>
+        <view class='top-left-bottom'>JUST DO IT!</view>
+      </view>
+      <view class='top-right'>
+        <view class='head' bindtap="toMyself"><image class="headimg" src="../../image/myPortroit.png" mode="cover"></image></view>
+      </view>
+    </view>
+  </view>
+
+  <view class='container'>
+    <view class='conbar' bindtap='toMyhomework'>
+      <image class='con-img' src='../../image/myhome.png'></image>
+      <view class='con-text'>我的作业</view>
+    </view>
+    <view class='conbar' bindtap='toPasswork'>
+      <image class='con-img' src='../../image/tijiao.png'></image>
+      <view class='con-text'>已提交</view>
+    </view>
+    <view class='conbar' bindtap='toMyclass'>
+      <image class='con-img' src='../../image/class.png'></image>
+      <view class='con-text'>我的班级</view>
+    </view>
+    <view class='conbar' bindtap='toCreakwork'>
+      <image class='con-img' src='../../image/buzhi.png'></image>
+      <view class='con-text'>布置作业</view>
+    </view>
+    <view class='conbar' bindtap='toTool'>
+      <image class='con-img' src='../../image/tool.png'></image>
+      <view class='con-text'>工具箱</view>
+    </view>
+    <view class='conbar' bindtap='toGame'>
+      <image class='con-img' src='../../image/game.png'></image>
+      <view class='con-text'>娱乐互动</view>
+    </view>
+    <view class='conbar' bindtap='toCheckName'>
+      <image class='con-img' src='../../image/checkname.png'></image>
+      <view class='con-text'>点名册</view>
+    </view>
+    <view class='conbar' bindtap='toMore'>
+      <image class='con-img' src='../../image/more.png'></image>
+      <view class='con-text'>更多</view>
+    </view>
+  </view>
+
+    <view class='bottom-con'>
+      <view class='bc-left'>
+        <view class='bcf-top'>今日作业</view>
+        <view class='bcf-bottom'>
+          <i-tag 
+              class="i-tags" 
+              name="RECOMMEND" 
+              color="blue">
+              HOMEWORK
+          </i-tag>
+        </view>
+      </view>
+      <image class='bc-right' src='../../image/sunday.png'></image>
+    </view>
+    <view class="nowork-con">
+      <view class='nowork'>
+        <image class='nohome-img' src='../../image/nohome.png'></image>
+      </view>
+      <view class='nohome-text'>今天没有作业哦^_^</view>
+    </view>
+</view>

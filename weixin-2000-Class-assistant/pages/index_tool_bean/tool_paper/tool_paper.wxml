@@ -1,0 +1,44 @@
+<!-- 内容主题 -->
+<view class="container">
+  <!-- 绘图区域 -->
+  <view class="canvas">
+    <canvas class="mycanvas bxz-bb w100p" canvas-id="canvas" bindtouchstart="canvasStart" bindtouchmove='canvasMove' bindtouchend='canvasEnd'></canvas>
+  </view>
+  <view class="control-i">
+    <!-- 粗细和颜色 -->
+    <view class="set_bar bxz-bb w100p">
+      <!-- 粗细 -->
+      <view class="linewidth_bar d-f">
+        <text class="title">粗细</text>
+        <view class="right_demo d-f">
+        <!-- 判断橡皮擦是否被选中 -->
+          <block wx:if="{{cancelChange}}">
+            <view wx:for="{{linewidth}}" wx:key class="linewidth_demo bdrs50p {{index == currentLinewidth ?'active':''}}" bindtap="changeLineWidth" id="{{index}}" style="width:{{item*2}}rpx;height:{{item*2}}rpx;background:#fff"></view>
+          </block>
+          <block wx:else>
+            <view wx:for="{{linewidth}}" wx:key class="linewidth_demo bdrs50p {{index == currentLinewidth ?'active':''}}" bindtap="changeLineWidth" id="{{index}}" style="width:{{item*2}}rpx;height:{{item*2}}rpx;background:{{color[currentColor]}};"></view>
+          </block>
+        </view>
+      </view>
+      <!-- 颜色 -->
+      <view class="color_bar d-f">
+        <text class="title">颜色</text>
+        <view class="right_demo d-f">
+          <!-- wx:for 遍历颜色 -->
+          <!-- index 每一个颜色的编号 -->
+          <!-- 三元运算符 判断那个颜色是被选中的 -->
+          <block wx:if="{{cancelChange}}">
+            <i class="iconfont icon-huabi" wx:for="{{color}}" style="color:{{item}};" id="{{index}}" bindtap="changeColor"></i>
+          </block>
+          <block wx:else>
+            <i class="iconfont icon-huabi {{index == currentColor ?'active':''}}" wx:key wx:for="{{color}}" style="color:{{item}};" id="{{index}}" bindtap="changeColor"></i>
+          </block>
+        </view>
+      </view>
+    </view>
+    <view class="btn">
+      <button bindtap="changCancel">橡皮擦</button>
+      <button bindtap="clearCanvas">清除</button>
+    </view> 
+  </view>
+</view>

@@ -1,0 +1,13 @@
+page{
+  background-color: #6A5ACD;
+}
+.skip{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+  margin-top: 200rpx;
+}
