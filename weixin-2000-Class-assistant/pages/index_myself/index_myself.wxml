@@ -30,7 +30,7 @@
       <view class='middles middle-right'>
           <view class='middle-button'>
             <image class="middle-img" src="../../image/class2.png" mode="cover"></image>
-            <view class='middle-text'>文章检索</view>
+            <view class='middle-text'>磁力检索</view>
           </view>
       </view>
     </view>

@@ -1,14 +1,10 @@
 package com.example.demo.controller;
 
-import com.example.demo.Model.Openid_Page;
-import com.example.demo.bean.DemoC;
 import com.example.demo.bean.Homework;
 import com.example.demo.bean.ResultObject;
 import com.example.demo.service.HomeworkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import javax.servlet.http.HttpServletRequest;
 
 /**************************************************************************
  *Copyright: 南国猫觅海

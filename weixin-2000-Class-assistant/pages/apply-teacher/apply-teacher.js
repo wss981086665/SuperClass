@@ -20,22 +20,12 @@ Page({
         title: '正在提交',
       })
       var openid = this.data.userOpenid;
-      var nickName = ''
-      wx.getStorage({
-        key: 'userInfo',
-        success: function(resss) {
-          nickName: resss.data.nickName
-        },
-      })
       var school = this.data.school;
-      var institute = this.data.institute;
       var profession = this.data.profession;
       var course = this.data.course;
       var name = this.data.name;
       var tell = this.data.tell;
-      nickName = encodeURIComponent(nickName); nickName = encodeURIComponent(nickName);//二次编码
       school = encodeURIComponent(school); school = encodeURIComponent(school);//二次编码
-      institute = encodeURIComponent(institute); institute = encodeURIComponent(institute);//二次编码
       profession = encodeURIComponent(profession); profession = encodeURIComponent(profession);//二次编码
       course = encodeURIComponent(course); course = encodeURIComponent(course);//二次编码
       name = encodeURIComponent(name); name = encodeURIComponent(name);//二次编码
@@ -47,8 +37,8 @@ Page({
           success: function (res) {
             wx.request({
               method: 'POST',
-              url: api.ip + 'superteacher/insertteacher?openid=' + openid + '&nickName=' + nickName + '&school=' +
-                school + '&institute=' + institute + '&profession=' + profession + '&course=' + course + '&name=' + name + '&tell=' + tell + '&pros1=' + res.data,
+              url: api.ip + 'teacher/insert?openid=' + openid + '&school=' +
+                school + '&profession=' + profession + '&course=' + course + '&name=' + name + '&tell=' + tell + '&pros1=' + res.data,
               success: function () {
                 wx.showToast({
                   title: '提交成功',

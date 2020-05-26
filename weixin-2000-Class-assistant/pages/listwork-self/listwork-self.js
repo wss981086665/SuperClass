@@ -34,7 +34,7 @@ Page({
         })
         setTimeout(function () {
           wx.request({
-            url: api.ip + 'homework/gethomework?openid=' + openid + '&page=' + page * 10,
+            url: api.ip + 'homework/gethomeworkbyopenid?openid=' + openid + '&page=' + page * 10,
             method: 'GET',
             data: {},
             success: function (res) {

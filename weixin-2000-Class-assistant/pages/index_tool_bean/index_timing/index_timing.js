@@ -54,6 +54,9 @@ Page({
   },
 
   onLoad: function (options) {
+    wx.setKeepScreenOn({
+      keepScreenOn: true
+    })
     this.countdown(options.second)
   },
 

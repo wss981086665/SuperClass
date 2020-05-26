@@ -1,12 +1,12 @@
 <view>
-  <view class='view-top'>已添加班级0个</view>
+  <view class='view-top'>已添加班级{{relations.length}}个</view>
   <view hidden='{{!hasvalue}}'>
     <view wx:for="{{relations}}" wx:key wx:for-index="index" wx:for-item="item">
-      <view class='textarea' data-relation="{{item}}" bindtap='towork'>
+      <view class='textarea' data-code="{{item.code}}" bindtap='towork'>
         <view class='avatarUrl'>
           <image src='../../image/classicon.png' class='ava-img'></image>
         </view>
-        <view class='class-tip'>{{item.con1}}</view>
+        <view class='class-tip'>{{item.courseName}}</view>
       </view>
     </view> 
   </view>

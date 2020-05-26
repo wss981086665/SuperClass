@@ -5,12 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    classid:''
+    code:''
   },
 
   backit: function () {
-    wx.switchTab({
-      url: '../myself/myself',
+    wx.navigateTo({
+      url: '../index_myself/index_myself',
     })
   },
 
@@ -20,7 +20,7 @@ Page({
   onLoad: function (options) {
     var that = this
     that.setData({
-      classid: options.classid
+      code: options.code
     })
   },
 
@@ -49,8 +49,8 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-    wx.switchTab({
-      url: '../myself/myself',
+    wx.navigateTo({
+      url: '../index/index',
     })
   },
 

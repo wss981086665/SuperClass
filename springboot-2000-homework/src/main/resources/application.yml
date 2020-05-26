@@ -1,14 +1,14 @@
 spring:
   datasource:
-    username: '这里就没必要看了吧'
-    password: '你的密码谁知道呢'
+    username: **
+    password: **
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://47.106.242.51:3306/homework
+    url: **
 
     schema:
 #     - classpath:sql/SD_Homework.sql
 #     - classpath:sql/SD_Reply.sql
-#     - classpath:sql/teacher.sql
+#     - classpath:sql/SD_teacher.sql
 #     - classpath:sql/SD_Course.sql
 #     - classpath:sql/SD_Relation.sql
 #     - classpath:sql/SD_User.sql

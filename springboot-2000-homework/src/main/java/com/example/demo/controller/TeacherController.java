@@ -17,14 +17,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 @CrossOrigin
 @RestController
-@RequestMapping("superteacher")
+@RequestMapping("teacher")
 public class TeacherController {
 
     @Autowired
     TeacherService teacherService;
 
     /*插入教师申请*/
-    @RequestMapping(value = "/insertteacher",method = RequestMethod.POST)
+    @RequestMapping(value = "/insert",method = RequestMethod.POST)
     public void insertTeacher(Teacher teacher){
         teacherService.insert(teacher);
     }

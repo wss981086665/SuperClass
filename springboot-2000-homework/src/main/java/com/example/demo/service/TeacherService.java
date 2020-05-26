@@ -22,9 +22,7 @@ public class TeacherService {
     TeacherMapper teacherMapper;
 
     public void insert(Teacher teacher){
-        String nickName = teacher.getNickName();
         String school = teacher.getSchool();
-        String institute = teacher.getInstitute();
         String profession = teacher.getProfession();
         String course = teacher.getCourse();
         String name = teacher.getName();
@@ -32,8 +30,6 @@ public class TeacherService {
         try {
             teacher.setSchool(school == "" ? "无" : URLDecoder.decode(school, "UTF-8"));
             teacher.setName(name == "" ? "匿名" : URLDecoder.decode(name, "UTF-8"));
-            teacher.setNickName(URLDecoder.decode(nickName, "UTF-8"));
-            teacher.setInstitute(URLDecoder.decode(institute, "UTF-8"));
             teacher.setProfession(URLDecoder.decode(profession, "UTF-8"));
             teacher.setCourse(URLDecoder.decode(course, "UTF-8"));
             teacher.setTell(URLDecoder.decode(tell, "UTF-8"));

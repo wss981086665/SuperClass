@@ -21,16 +21,15 @@ Page({
     wx.showLoading({
       title: '正在创建',
     })
-    var classname = that.data.classname
-    var classid = ''
+    var courseName = that.data.classname
+    var code = ''
     var date = util.formatData(new Date())
     var openid = that.data.openid
-    var avatarUrl = that.data.userInfo.avatarUrl
 
-    classname = encodeURIComponent(classname);
-    classname = encodeURIComponent(classname);//二次编码
+    courseName = encodeURIComponent(courseName);
+    courseName = encodeURIComponent(courseName);//二次编码
 
-    if(classname.length < 4){
+    if (courseName.length < 4){
       wx.showToast({
         title: '班级名称太短',
         icon:'none'
@@ -39,11 +38,11 @@ Page({
       var random = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
       for (var i = 0; i < 4; i++) {
         var index = Math.floor(Math.random() * 36);
-        classid += random[index];
+        code += random[index];
       }
       wx.request({
         method: 'POST',
-        url: api.ip + 'democlass/insertclass?classname=' + classname + '&classid=' + classid + '&date=' + date + '&openid=' + openid+'&con1='+avatarUrl,
+        url: api.ip + 'course/insert?code=' + code + '&courseName=' + courseName + '&date=' + date + '&openid=' + openid,
         success:function() {
           setTimeout(function() {
             wx.showToast({
@@ -51,7 +50,7 @@ Page({
               success: function () {
                 setTimeout(function () {
                   wx.navigateTo({
-                    url: '../classiddisplay/classiddisplay?classid=' + classid,
+                    url: '../classiddisplay/classiddisplay?code=' + code,
                   })
                 }, 700)
               }

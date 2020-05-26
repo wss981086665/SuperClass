@@ -15,12 +15,13 @@ Page({
    */
   onLoad: function (options) {
     var that = this
-    var classid = options.classid
+    var code = options.code
     wx.request({
       method: 'GET',
-      url: api.ip + 'relation/getstudentbyclassid?classid=' + classid,
+      url: api.ip + 'relation/getUserByCode?code=' + code,
       success: function (res) {
         var students = res.data.result
+        console.log(students)
         if (students == null) {
           var toastText = '获取数据失败' + res.data.errMsg;
           wx.showToast({
@@ -29,7 +30,6 @@ Page({
             duration: 2000 //弹出时间
           })
         } else {
-
           if (students.length == 0) {
             that.setData({
               hasvalue: false

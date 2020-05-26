@@ -1,8 +1,5 @@
 package com.example.demo.dao;
 
-import com.example.demo.Model.Homework_Model_A;
-import com.example.demo.Model.Openid_Page;
-import com.example.demo.bean.DemoC;
 import com.example.demo.bean.Homework;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Component;
@@ -28,8 +25,8 @@ public interface HomeworkMapper {
                                           @Param("page") Integer page);
 
     // 查找已添加课程中的Homework
-    @Select("SELECT t2.* FROM relation AS t1 INNER JOIN SD_Homework AS t2 " +
-            "ON t1.classid=t2.classid WHERE t1.openid=#{openid} " +
+    @Select("SELECT t2.* FROM SD_Relation AS t1 INNER JOIN SD_Homework AS t2 " +
+            "ON t1.code=t2.classid WHERE t1.openid=#{openid} " +
             "ORDER BY date DESC LIMIT #{page},10")
     public List<Homework> getWorkByClassInOpenid(@Param("openid") String openid,
                                                  @Param("page") Integer page);
@@ -47,7 +44,7 @@ public interface HomeworkMapper {
     @Insert("INSERT INTO SD_Homework(code,classid,imgurl,openid,topic,content,date,isDelete,factor1,factor2,factor3,factor4,factor5) VALUES(#{code},#{classid},#{imgurl},#{openid},#{topic},#{content},#{date},#{isDelete},#{factor1},#{factor2},#{factor3},#{factor4},#{factor5})")
     public void insertWork(Homework homework);
 
-    @Update("UPDATE SD_Homework SET isDelete=1 WHERE id=#{id}")
+    @Update("DELETE FROM SD_Homework WHERE id=#{id}")
     public void deleteHomeworkById(Integer id);
 
 }

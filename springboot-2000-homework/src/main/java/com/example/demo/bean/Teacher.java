@@ -4,9 +4,7 @@ public class Teacher {
 
     private Integer id;
     private String openid;
-    private String nickName;
     private String school;
-    private String institute;
     private String profession;
     private String course;
     private String name;
@@ -14,18 +12,13 @@ public class Teacher {
     private String pros1;
     private String pros2;
     private String pros3;
-    private String pros4;
-    private String pros5;
 
     public Teacher() {
     }
 
-    public Teacher(Integer id, String openid, String nickName, String school, String institute, String profession, String course, String name, String tell, String pros1, String pros2, String pros3, String pros4, String pros5) {
-        this.id = id;
+    public Teacher(String openid, String school, String profession, String course, String name, String tell, String pros1, String pros2, String pros3) {
         this.openid = openid;
-        this.nickName = nickName;
         this.school = school;
-        this.institute = institute;
         this.profession = profession;
         this.course = course;
         this.name = name;
@@ -33,8 +26,6 @@ public class Teacher {
         this.pros1 = pros1;
         this.pros2 = pros2;
         this.pros3 = pros3;
-        this.pros4 = pros4;
-        this.pros5 = pros5;
     }
 
     @Override
@@ -42,9 +33,7 @@ public class Teacher {
         return "Teacher{" +
                 "id=" + id +
                 ", openid='" + openid + '\'' +
-                ", nickName='" + nickName + '\'' +
                 ", school='" + school + '\'' +
-                ", institute='" + institute + '\'' +
                 ", profession='" + profession + '\'' +
                 ", course='" + course + '\'' +
                 ", name='" + name + '\'' +
@@ -52,8 +41,6 @@ public class Teacher {
                 ", pros1='" + pros1 + '\'' +
                 ", pros2='" + pros2 + '\'' +
                 ", pros3='" + pros3 + '\'' +
-                ", pros4='" + pros4 + '\'' +
-                ", pros5='" + pros5 + '\'' +
                 '}';
     }
 
@@ -73,28 +60,12 @@ public class Teacher {
         this.openid = openid;
     }
 
-    public String getNickName() {
-        return nickName;
-    }
-
-    public void setNickName(String nickName) {
-        this.nickName = nickName;
-    }
-
     public String getSchool() {
         return school;
     }
 
     public void setSchool(String school) {
         this.school = school;
-    }
-
-    public String getInstitute() {
-        return institute;
-    }
-
-    public void setInstitute(String institute) {
-        this.institute = institute;
     }
 
     public String getProfession() {
@@ -151,21 +122,5 @@ public class Teacher {
 
     public void setPros3(String pros3) {
         this.pros3 = pros3;
-    }
-
-    public String getPros4() {
-        return pros4;
-    }
-
-    public void setPros4(String pros4) {
-        this.pros4 = pros4;
-    }
-
-    public String getPros5() {
-        return pros5;
-    }
-
-    public void setPros5(String pros5) {
-        this.pros5 = pros5;
     }
 }

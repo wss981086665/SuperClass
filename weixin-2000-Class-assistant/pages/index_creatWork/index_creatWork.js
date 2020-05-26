@@ -193,10 +193,10 @@ Page({
         })
         wx.request({
           method: 'GET',
-          url: api.ip + "democlass/getclassinfo?openid=" + res.data,
+          url: api.ip + "course/getSomeInfo?openid=" + res.data,
           success: function (res) {
-            var classnames = res.data.classnames;
-            var classids = res.data.classids
+            var classnames = res.data.courseNames;
+            var classids = res.data.codes
             if (classnames == null) {
               var toastText = '获取数据失败' + res.data.errMsg;
               wx.showToast({

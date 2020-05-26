@@ -8,7 +8,7 @@ Page({
   },
 
   towork: function (e) {
-    var classid = e.currentTarget.dataset.relation.classid
+    var classid = e.currentTarget.dataset.code
     wx.navigateTo({
       url: '../listwork-class/listwork-class?classid=' + classid,
     })
@@ -29,11 +29,12 @@ Page({
       key: 'userOpenid',
       success: function (ress) {
         wx.request({
-          url: api.ip + 'relation/getrelationbyopenid?openid=' + ress.data,
+          url: api.ip + 'relation/getByOpenid?openid=' + ress.data,
           method: 'GET',
           data: {},
           success: function (res) {
             var relations = res.data.result
+            console.log(relations)
             if (relations == null) {
               var toastText = '获取数据失败' + res.data.errMsg;
               that.setData({
@@ -89,7 +90,7 @@ Page({
   },
 
   onUnload: function () {
-
+    
   },
 
   onPullDownRefresh: function () {

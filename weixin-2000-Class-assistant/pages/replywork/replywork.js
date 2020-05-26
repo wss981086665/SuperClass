@@ -43,6 +43,7 @@ Page({
   },
 
   checkValue: function() {
+    var that = this
     var content = that.data.replycon
     if(content == '') {
       $Message({
@@ -50,7 +51,7 @@ Page({
         type: 'warning'
       });
     } else {
-      this.reply()
+      that.reply()
     }
   },
 

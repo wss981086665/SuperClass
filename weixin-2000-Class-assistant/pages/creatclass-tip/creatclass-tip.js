@@ -2,7 +2,7 @@ const api = require('../../api.js')
 Page({
 
   data: {
-    classes: [],
+    courses: [],
     hasvalue: true
   },
 
@@ -13,9 +13,9 @@ Page({
   },
 
   toStudentList:function(e) {
-    var classid = e.currentTarget.dataset.classid
+    var code = e.currentTarget.dataset.code
     wx.navigateTo({
-      url: '../listStudent/listStudent?classid=' + classid,
+      url: '../listStudent/listStudent?code=' + code,
     })
   },
 
@@ -30,10 +30,10 @@ Page({
         var openid = res.data
         wx.request({
           method: 'GET',
-          url: api.ip + 'democlass/getclass?openid=' + openid,
+          url: api.ip + 'course/getByOpenid?openid=' + openid,
           success:function(ress){
-            var classes = ress.data.result
-            if (classes == null) {
+            var courses = ress.data.result
+            if (courses == null) {
               var toastText = '获取数据失败' + ress.data.errMsg;
               wx.showToast({
                 title: toastText,
@@ -41,13 +41,13 @@ Page({
                 duration: 2000 //弹出时间
               })
             } else {
-              if (classes.length == 0) {
+              if (courses.length == 0) {
                 that.setData({
                   hasvalue: false
                 })
               } else {
                 that.setData({
-                  classes: classes,
+                  courses: courses,
                 });
               }
               setTimeout(function () {

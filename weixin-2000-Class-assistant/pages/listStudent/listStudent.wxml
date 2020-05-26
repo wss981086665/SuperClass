@@ -1,8 +1,8 @@
 <view>
   <view class='view-top'>已添加<text class='view-top-text'>{{students.length}}</text>个学生</view>
   <view wx:for="{{students}}" wx:key wx:for-index="index" wx:for-item="item">
-    <view class='textarea' data-index='{{index}}' bindtap='tocontent'>
-      <view class='name'>{{item}}</view>
+    <view class='textarea' data-index='{{index}}'>
+      <view class='name'>{{item.name}}</view>
     </view>
   </view>
   <view class='nowork' hidden='{{hasvalue}}'>

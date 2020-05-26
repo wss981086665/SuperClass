@@ -96,11 +96,11 @@ Page({
   },
 
   onHide: function () {
-
+    
   },
 
   onUnload: function () {
-
+    
   },
 
   onPullDownRefresh: function () {

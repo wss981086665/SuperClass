@@ -35,7 +35,7 @@ Page({
     if (length == 4) {
       wx.request({
         method: 'GET',
-        url: api.ip + '/democlass/getclassbyclassid?classid=' + searchword,
+        url: api.ip + '/course/getByCode?code=' + searchword,
         success: function (res) {
           var classes = res.data.result
           if (classes == null) {
@@ -51,7 +51,7 @@ Page({
               data: classes[0],
               success: function () {
                 wx.navigateTo({
-                  url: '../democlass/democlass?classid=' + searchword,
+                  url: '../democlass/democlass?code=' + searchword,
                 })
               }
             })

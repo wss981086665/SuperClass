@@ -4,6 +4,8 @@ import com.example.demo.bean.DemoB;
 import com.example.demo.bean.Course;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Component;
+
+import java.util.HashMap;
 import java.util.List;
 
 /**************************************************************************
@@ -17,8 +19,8 @@ import java.util.List;
 @Component(value = "courseMapper")
 public interface CourseMapper {
 
-    @Select("SELECT * FROM SD_Course WHERE openid=#{openid}")
-    public List<Course> getByOpenid(String openid);
+    @Select("SELECT code,courseName FROM SD_Course WHERE openid=#{openid}")
+    public List<HashMap<String, String>> getByOpenid(String openid);
 
     @Select("SELECT code,courseName FROM SD_Course WHERE openid=#{openid}")
     public List<DemoB> getSomeInfo(String openid);
@@ -29,7 +31,7 @@ public interface CourseMapper {
     @Insert("INSERT INTO SD_Course(code,courseName,openid,date,isDelete,con1,con2,con3,con4,con5) VALUES(#{code},#{courseName},#{openid},#{date},#{isDelete},#{con1},#{con2},#{con3},#{con4},#{con5})")
     public void insert(Course course);
 
-    @Update("UPDATE SD_Course SET isDelete=1 WHERE id=#{id}")
+    @Update("DELETE FROM SD_Course WHERE id=#{id}")
     public void deleteById(Integer id);
 
 }

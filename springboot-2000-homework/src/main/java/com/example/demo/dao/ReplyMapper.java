@@ -31,7 +31,7 @@ public interface ReplyMapper {
     public void insertReply(Reply reply);
 
     // 根据 homeworkcode 删除 reply
-    @Update("UPDATE SD_Reply SET isDelete=1 WHERE codeid=#{codeid}")
+    @Update("DELETE FROM SD_Reply WHERE codeid=#{codeid}")
     public void deleteByCodeid(String codeid);
 
 }

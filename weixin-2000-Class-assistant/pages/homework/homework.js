@@ -56,7 +56,9 @@ Page({
   },
 
   onUnload: function () {
-
+    wx.navigateTo({
+      url: '../index/index',
+    })
   },
 
   /**
