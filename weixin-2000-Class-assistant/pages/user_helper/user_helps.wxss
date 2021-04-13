@@ -1,0 +1,25 @@
+/* pages/user_helper/user_helps.wxss */
+.question {
+  width: 78%;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left: 20rpx;
+  color: rgb(245, 245, 245);
+  margin-top: 30rpx;
+  background-color: #6A5ACD;
+  overflow: hidden;
+  border-top-right-radius: 40rpx;
+  border-bottom-right-radius: 40rpx;
+}
+.explain {
+  width: 94%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 10rpx;
+  padding: 0 15rpx;
+  border-left: 2rpx solid skyblue;
+  line-height: 60rpx;
+  font-size: 16px;
+  color: rgb(89, 89, 89);
+}

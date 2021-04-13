@@ -4,10 +4,18 @@ const api = require('../../api.js');
 Page({
 
   data: {
+    id: -1,
     answer: {},
     name: '',
-    hasimage: false
+    hasimage: false,
+    score: 60
   },
+
+  handleChange1 ({ detail }) {
+    this.setData({
+      score: detail.value
+    })
+},
 
   previewImage: function (e) {
     var articles = [e.currentTarget.dataset.src];
@@ -16,10 +24,36 @@ Page({
     })
   },
 
+  putScore: function() {
+    var that = this
+    wx.showLoading({
+      title: '正在提交评分',
+    })
+    wx.request({
+      url: api.ip + 'reply/putScore?id=' + that.data.id + '&factor1=' + that.data.score,
+      method: 'POST',
+      data: {},
+      success: function (res) {
+        wx.hideLoading({
+          complete: (res) => {
+            wx.navigateBack()
+          },
+        })
+      },
+      fail: function () {
+        wx.showToast({
+          title: '获取数据失败',
+          icon: 'none'
+        })
+      }
+    })
+  },
+
   onLoad: function (options) {
     var that = this
     that.setData({
-      name: options.name
+      name: options.name,
+      id: options.id
     })
 
     wx.request({

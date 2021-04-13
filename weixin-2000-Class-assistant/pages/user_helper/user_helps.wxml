@@ -1,0 +1,36 @@
+<!--pages/user_helper/user_helps.wxml-->
+<view>
+  <view class="question">教师如何创建班级?</view>
+  <view class="explain">点击主页面右上角的用户图形按钮进入我的页面->点击创建班级->点击创建新班级。</view>
+
+  <view class="question">学生如何添加班级?</view>
+  <view class="explain">教师创建班级过后，会生成一个班级码，学生通过班级码搜索并加入到班级。</view>
+
+  <view class="question">教师如何布置作业?</view>
+  <view class="explain">小程序主页面点击布置作业->填写作业信息->选择课程。注意：只有选择课程，对应班级里的学生才可以此作业。</view>
+
+  <view class="question">点名册使用有什么前提吗?</view>
+  <view class="explain">若要使用点名册功能，必须先创建班级，且班级里要有学生才有意义。</view>
+
+  <view class="question">教师如何查看学生作业详情?</view>
+  <view class="explain">方法一：点击主页面右上角用户图形，进入我的页面->点击已布置->找到对应作业点击->即可查看学生提交详情->点击学生提交的作业->进入评分页面。</view>
+  <view class="explain">方法二：主页面点击我的班级->点击作业所在的班级->点击对应的作业->其余步骤同方法一。</view>
+
+  <view class="question">区分教师端和学生端吗?</view>
+  <view class="explain">由于要遵守体量小、效率高的原则，因此没有将用户区分为教师和学生两种身份。但是学生只能看到教师在班级里发布的作业，因此在实际使用过程中没有影响。</view>
+
+  <view class="question">不创建班级可以发布作业吗?</view>
+  <view class="explain">可以，但是以这种方式发布的作业，其他用户只能通过作业码搜索看到作业，在已经添加的班级里是无法看到该作业的。</view>
+
+  <view class="question">如何使用课堂小工具?</view>
+  <view class="explain">小程序主页面点击工具箱->点击相应的工具即可使用。注：1.部分小工具仍在开发中! 2.工具箱和娱乐互动入口暂未分离!</view>
+
+  <view class="question">教师可以使用小工具吗?</view>
+  <view class="explain">可以，学生和教师均可以使用课堂小工具，都可以享受小工具带来的便利。</view>
+
+  <view class="question">怎么才能接收到我的作业?</view>
+  <view class="explain">首先加入班级，然后班级教师发布作业之后，即可在我的作业里接收到教师发布的作业。</view>
+
+  <view class="question">怎么才能收到作业?</view>
+  <view class="explain">首先加入班级，然后班级教师发布作业之后，即可在我的作业里接收到教师发布的作业。</view>
+</view>

@@ -69,16 +69,6 @@ page{
   font-weight: 600;
   color:  rgb(255, 255, 255);
 }
-.skip{
-  width: 100%;
-  height: 100rpx;
-  line-height: 100rpx;
-  text-align: center;
-  font-size: 30px;
-  color: white;
-  font-weight: 600;
-  margin-top: 200rpx;
-}
 @keyframes demo1{
   from{
     width: 0;
@@ -86,4 +76,29 @@ page{
   to{
     width: 100rpx;
   }
+}
+.no-img-con {
+  width: 320rpx;
+  height: 320rpx;
+  margin: 0 auto;
+  margin-top: 180rpx;
+}
+.skip{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 20px;
+  text-align: center;
+  color: #EBEBEB;
+}
+.toSearch {
+  width: 270rpx;
+  height: 80rpx;
+  margin: 0 auto;
+  background-color: rgb(250, 250, 250);
+  color: #6A5ACD;
+  text-align: center;
+  line-height: 80rpx;
+  margin-top: 30rpx;
+  border-radius: 10rpx;
 }

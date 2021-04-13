@@ -1,4 +1,21 @@
 <!--pages/index_checkName/index_checkName.wxml-->
 <view>
-  <text>pages/index_checkName/index_checkName.wxml</text>
+  <view class="tip">请先选择一个班级</view>
+  <view hidden='{{!hasvalue}}'>
+    <view wx:for="{{courses}}" wx:key wx:for-index="index" wx:for-item="item">
+      <view class='textarea' data-code="{{item.code}}" bindtap="toDianming">
+        <view class='courseName'>{{item.courseName}}</view>
+        <view class='director'>
+          <image class="direction-img" src="../../image/direction.png" mode="cover"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='noclass' hidden='{{hasvalue}}'>
+    <view class="no-img-con">
+      <image src="../../image/empty2.png" style="width:100%; height:100%;"></image>
+    </view>
+    <view class='skip'>请先创建一个班级！</view> 
+    <view class="toSearch" bindtap="toCreateWork">去创建班级-></view>
+  </view>
 </view>

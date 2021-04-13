@@ -30,6 +30,9 @@ public interface ReplyMapper {
     @Insert("INSERT INTO SD_Reply(codeid,openid,imgurl,content,date,isDelete,factor1,factor2,factor3,factor4,factor5) VALUES(#{codeid},#{openid},#{imgurl},#{content},#{date},#{isDelete},#{factor1},#{factor2},#{factor3},#{factor4},#{factor5})")
     public void insertReply(Reply reply);
 
+    @Update("UPDATE SD_Reply SET factor1=#{factor1} WHERE id=#{id}")
+    public void putScore(@Param("id") Integer id, @Param("factor1") Integer factor1);
+
     // 根据 homeworkcode 删除 reply
     @Update("DELETE FROM SD_Reply WHERE codeid=#{codeid}")
     public void deleteByCodeid(String codeid);

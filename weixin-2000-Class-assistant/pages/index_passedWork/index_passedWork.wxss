@@ -1,1 +1,60 @@
 /* pages/index-passwork/index-passowrk.wxss */
+.thearea {
+  width: 94%;
+  height: 100%;
+  margin: 0 auto;
+  line-height: 60rpx;
+  margin-top: 10px;
+  overflow: hidden;
+  padding-top: 10rpx;
+  background-color: rgb(246, 246, 255);
+  padding-bottom: 10rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+.con-top {
+  width: 100%;
+  height: 70rpx;
+  border-bottom: 1px solid rgb(187, 187, 187);
+}
+.re-date {
+  width: 50%;
+  height: 70rpx;
+  color: rgb(150, 133, 133);
+  font-size: 15px;
+  float: left;
+  line-height: 70rpx;
+}
+.re-score {
+  width: 40%;
+  height: 70rpx;
+  float: right;
+  color: red;
+  font-size: 15px;
+  text-align: right;
+}
+.no-img-con {
+  width: 320rpx;
+  height: 320rpx;
+  margin: 0 auto;
+  margin-top: 180rpx;
+}
+.skip{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 20px;
+  text-align: center;
+  color: #EBEBEB;
+}
+.toSearch {
+  width: 270rpx;
+  height: 80rpx;
+  margin: 0 auto;
+  background-color: #6A5ACD;
+  color: rgb(250, 250, 250);
+  text-align: center;
+  line-height: 80rpx;
+  margin-top: 30rpx;
+  border-radius: 10rpx;
+}

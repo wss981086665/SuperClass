@@ -21,11 +21,9 @@ Page({
     wx.getStorage({
       key: 'hasUserInfo',
       success: function (res) {
-        if (res.data == false) {
-          wx.navigateTo({
-            url: '../login/login',
-          })
-        }
+        that.setData({
+          hasUserInfo: res.data
+        })
       },
       fail: function () {
         that.setData({
@@ -33,12 +31,7 @@ Page({
         })
         wx.setStorage({
           key: 'hasUserInfo',
-          data: false,
-          success:function() {
-            wx.navigateTo({
-              url: '../login/login',
-            })
-          }
+          data: false
         })
       }
     })
@@ -53,34 +46,82 @@ Page({
   },
 
   toMyself: function () {
-    wx.navigateTo({
-      url: '../index_myself/index_myself',
-    })
+    var that = this;
+    if(that.data.hasUserInfo == true) {
+      wx.navigateTo({
+        url: '../index_myself/index_myself',
+      })
+    } else {
+      wx.showToast({
+        title: '请先登录',
+        icon: 'success'
+      })
+    }
   },
   goSearch: function () {
-    wx.navigateTo({
-      url: '../search/search',
-    })
+    var that = this;
+    if(that.data.hasUserInfo == true) {
+      wx.navigateTo({
+        url: '../search/search',
+      })
+    } else {
+      wx.showToast({
+        title: '请先登录',
+        icon: 'success'
+      })
+    }
   },
   toMyhomework: function () {
-    wx.navigateTo({
-      url: '../index_myHomework/index_myHomework',
-    })
+    var that = this;
+    if(that.data.hasUserInfo == true) {
+      wx.navigateTo({
+        url: '../index_myHomework/index_myHomework',
+      })
+    } else {
+      wx.showToast({
+        title: '请先登录',
+        icon: 'success'
+      })
+    }
   },
   toPasswork: function () {
-    wx.navigateTo({
-      url: '../index_passedWork/index_passedWork',
-    })
+    var that = this;
+    if(that.data.hasUserInfo == true) {
+      wx.navigateTo({
+        url: '../index_passedWork/index_passedWork',
+      })
+    } else {
+      wx.showToast({
+        title: '请先登录',
+        icon: 'success'
+      })
+    }
   },
   toCreakwork: function () {
-    wx.navigateTo({
-      url: '../index_creatWork/index_creatWork',
-    })
+    var that = this;
+    if(that.data.hasUserInfo == true) {
+      wx.navigateTo({
+        url: '../index_creatWork/index_creatWork',
+      })
+    } else {
+      wx.showToast({
+        title: '请先登录',
+        icon: 'success'
+      })
+    }
   },
   toMyclass: function () {
-    wx.navigateTo({
-      url: '../index_myClass/index_myClass',
-    })
+    var that = this;
+    if(that.data.hasUserInfo == true) {
+      wx.navigateTo({
+        url: '../index_myClass/index_myClass',
+      })
+    } else {
+      wx.showToast({
+        title: '请先登录',
+        icon: 'success'
+      })
+    }
   },
   toTool: function () {
     wx.navigateTo({
@@ -93,13 +134,27 @@ Page({
     })
   },
   toCheckName: function () {
-    wx.navigateTo({
-      url: '../index_checkName/index_checkName',
-    })
+    var that = this;
+    if(that.data.hasUserInfo == true) {
+      wx.navigateTo({
+        url: '../index_checkName/index_checkName',
+      })
+    } else {
+      wx.showToast({
+        title: '请先登录',
+        icon: 'success'
+      })
+    }
   },
   toMore: function () {
     wx.navigateTo({
       url: '../index_more/index_more',
     })
   },
+
+  toLogin: function() {
+    wx.navigateTo({
+      url: '../login/login',
+    })
+  }
 })

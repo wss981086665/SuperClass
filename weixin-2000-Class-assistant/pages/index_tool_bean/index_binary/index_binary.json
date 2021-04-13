@@ -1,9 +1,5 @@
 {
   "navigationBarTitleText": "进制换算",
   "navigationBarBackgroundColor": "#6A5ACD",
-  "navigationBarTextStyle": "white",
-  "usingComponents": {
-    "i-panel": "../../dist/panel/index",
-    "i-input": "../../dist/input/index"
-  }
+  "navigationBarTextStyle": "white"
 }

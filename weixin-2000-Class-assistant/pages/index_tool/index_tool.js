@@ -41,6 +41,7 @@ Page({
     })
   },
   useBinary: function() {
+    console.log('准备跳转')
     wx.navigateTo({
       url: '../index_tool_bean/index_binary/index_binary',
     })

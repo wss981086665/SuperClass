@@ -126,6 +126,18 @@ Page({
     })
   },
 
+  toCreateWork: function() {
+    wx.navigateTo({
+      url: '../index_creatWork/index_creatWork',
+    })
+  },
+
+  toCreateCourse: function() {
+    wx.navigateTo({
+      url: '../creatclass-tip/creatclass-tip',
+    })
+  },
+
   onLoad: function (options) {
     var that = this
     var page = that.data.page

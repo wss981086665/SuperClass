@@ -5,5 +5,15 @@
   </view>
   <view class='reply-tip'>解答内容</view>
   <view class='content'>{{answer.content}}</view>
-  <!-- <view class='evaluate'>评分</view> -->
+  <view class='reply-tip'>解答日期</view>
+  <view class='content'>{{answer.date}}</view>
+  <view class='reply-tip'>当前成绩</view>
+  <view class='content'>{{answer.factor1}}</view>
+  
+  
+  <view class="score" style="padding: 16px">
+      <i-input-number value="{{ score }}" min="0" max="100" bindchange="handleChange1" />
+  </view>
+  <view class='evaluate' bindtap="putScore">评分</view>
+  <view class="eva-tip">tip:先填写分数，点击评分即可完成评分。评分过后可再次对此答案评分。</view>
 </view>

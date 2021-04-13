@@ -1,0 +1,23 @@
+<!--pages/myself-Contact/myself-Contact.wxml-->
+<view>
+  <view class="tip">开发人员名单</view>
+  <view class="bean">
+    <view class="name">王顺顺</view>
+    <view class="contact">联系方式: 981086665</view>
+  </view>
+  <view class="bean">
+    <view class="name">张康</view>
+    <view class="contact">联系方式: 保密</view>
+  </view>
+  <view class="bean">
+    <view class="name">朱韦奇</view>
+    <view class="contact">联系方式: 保密</view>
+  </view>
+  <view class="bean">
+    <view class="name">赵佳新</view>
+    <view class="contact">联系方式: 保密</view>
+  </view>
+
+  <view class="bottom-tip">Copyright @WeAreHeros 2019-2020</view>
+  <view class="bottom-tip2">南国猫觅海 版权所有</view>
+</view>

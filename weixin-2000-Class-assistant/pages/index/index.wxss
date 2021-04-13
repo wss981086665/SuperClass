@@ -4,7 +4,7 @@
   height: 70rpx;
   background-color: rgb(240, 240, 240);
   margin: 0 auto;
-  margin-top: 15rpx;
+  margin-top: 50rpx;
   text-align: center;
   line-height: 70rpx;
   color: #9b9b9b;
@@ -147,8 +147,8 @@
   margin-bottom: 80rpx;
 }
 .nowork{
-  width: 50%;
-  height: 350rpx;
+  width: 320rpx;
+  height: 320rpx;
   margin: 0 auto;
   margin-top: 80rpx;
 }
@@ -186,4 +186,18 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.toLogin {
+  width: 90%;
+  height: 40px;
+  text-align: center;
+  left: 5%;
+  position: fixed;
+  background-color: #6A5ACD;
+  bottom: 30rpx;
+  line-height: 40px;
+  font-size: 18px;
+  border-radius: 4px;
+  color: white;
 }

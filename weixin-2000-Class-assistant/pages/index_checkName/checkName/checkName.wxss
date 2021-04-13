@@ -1,0 +1,53 @@
+/* pages/index_checkName/checkName/checkName.wxss */
+.name {
+  width: 100%;
+  height: 400rpx;
+  line-height: 400rpx;
+  color: blueviolet;
+  font-size: 26px;
+  font-weight: 700;
+  background-color: gainsboro;
+  border-bottom: 1px solid rgb(184, 184, 184);
+  text-align: center;
+}
+.success {
+  width: 80%;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 16px;
+  margin-left: 15rpx;
+  color: red;
+}
+.tip {
+  width: 94%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  line-height: 50rpx;
+  font-size: 14px;
+  color: rgb(97, 97, 97);
+}
+.c-all {
+  margin-left: 15rpx;
+  font-size: 15px;
+  color: red;
+}
+.c-con {
+  margin-top: 25rpx;
+  width: 100vw;
+  height: 100%;
+}
+.s-name {
+  width: 23%;
+  height: 70rpx;
+  margin-left: 1%;
+  margin-top: 15rpx;
+  float: left;
+  line-height: 70rpx;
+  text-align: center;
+  border-bottom: 1px solid gray;
+}
+.i-tags {
+  margin-left: 25rpx;
+  margin-top: 25rpx;
+}

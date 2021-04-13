@@ -21,6 +21,18 @@ Page({
     })
   },
 
+  toContact: function() {
+    wx.navigateTo({
+      url: '../myself-Contact/myself-Contact',
+    })
+  },
+
+  toUserHelp: function() {
+    wx.navigateTo({
+      url: '../user_helper/user_helps',
+    })
+  },
+
   applyteacher: function () {
     wx.navigateTo({
       url: '../apply-teacher/apply-teacher',
@@ -30,7 +42,7 @@ Page({
   clearCache: function () {
     wx.showModal({
       title: '温馨提示',
-      content: '请确认是否清理缓存并退出-汇课堂？',
+      content: '请确认是否清理缓存并退出-超级课堂汇？',
       confirmColor: '#32CD32',
       confirmText: '确定',
       success: function (res) {

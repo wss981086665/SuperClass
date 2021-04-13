@@ -23,5 +23,12 @@
     <view class='juddelete' bindtap='condelete' hidden='{{!judgedelete || rejudge}}'>删除</view>
     <view class='juddelete' bindtap='nodelete' hidden='{{judgedelete || rejudge}}'>取消</view>
   </view>
-  <view class='skip' hidden='{{hasvalue}}'>暂时没有结果</view>
+  <view hidden='{{hasvalue}}'>
+    <view class="no-img-con">
+      <image src="../../image/empty2.png" style="width:100%; height:100%;"></image>
+    </view>
+    <view class='skip'>暂时没有结果</view> 
+    <view class="toSearch" bindtap="toCreateWork">去发布作业-></view>
+    <view class="toSearch" bindtap="toCreateCourse">去创建班级-></view>
+  </view>
 </view>

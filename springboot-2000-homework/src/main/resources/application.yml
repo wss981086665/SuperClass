@@ -1,9 +1,9 @@
 spring:
   datasource:
-    username: **
-    password: **
+    username: iuser
+    password: 123456
     driver-class-name: com.mysql.jdbc.Driver
-    url: **
+    url: jdbc:mysql://47.111.84.68:3306/homework
 
     schema:
 #     - classpath:sql/SD_Homework.sql

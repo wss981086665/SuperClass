@@ -102,6 +102,18 @@ Page({
     })
   },
 
+  toSearchWork: function() {
+    wx.navigateTo({
+      url: '../search/search',
+    })
+  },
+
+  toAddCourse: function() {
+    wx.navigateTo({
+      url: '../index_myClass/index_myClass',
+    })
+  },
+
   onLoad: function (options) {
     var that = this
     var page = that.data.page

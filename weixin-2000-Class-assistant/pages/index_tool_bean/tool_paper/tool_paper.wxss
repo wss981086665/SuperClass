@@ -1,7 +1,7 @@
 @import '../../../iconfont/iconfont.wxss';
  
 page {
-  background: #eaeaea;
+  background: #6A5ACD;
 }
 
 .container {
@@ -14,7 +14,7 @@ page {
   width:100%;  
 }
 .mycanvas {
-  height: 800rpx;
+  height: 900rpx;
   margin-bottom: 22rpx;
   background: #fff;
   box-shadow: 0 0 10rpx #ccc;
@@ -69,4 +69,7 @@ page {
   float: left;
   margin-left: 14%;
   margin-top: 20rpx;
+}
+.title{
+  color: rgb(245, 245, 245);
 }

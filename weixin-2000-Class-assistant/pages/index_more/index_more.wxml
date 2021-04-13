@@ -1,4 +1,7 @@
 <!--pages/index_more/index_more.wxml-->
 <view>
-  <text>pages/index_more/index_more.wxml</text>
+  <view class="no-img-con">
+      <image src="../../image/empty2.png" style="width:100%; height:100%;"></image>
+    </view>
+    <view class='skip'>敬请期待...</view> 
 </view>

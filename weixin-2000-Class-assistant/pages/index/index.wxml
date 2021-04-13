@@ -69,4 +69,6 @@
       </view>
       <view class='nohome-text'>今天没有作业哦^_^</view>
     </view>
+
+    <view class="toLogin" bindtap='toLogin' wx:if="{{!hasUserInfo}}">去登录</view>
 </view>

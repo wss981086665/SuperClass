@@ -49,6 +49,10 @@ public class ReplyService {
         replyMapper.insertReply(reply);
     }
 
+    public void putScore(Integer id, Integer factor1) {
+        replyMapper.putScore(id, factor1);
+    }
+
     public void deleteByCodeid(String codeid){
         replyMapper.deleteByCodeid(codeid);
     }

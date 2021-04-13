@@ -43,10 +43,12 @@
     <image class="direction-img" src="../../image/direction.png" mode="cover"></image>
   </view>
 
-  <view class='item_choice'>联系我们
+  <view class='item_choice' bindtap="toContact">关于我们
     <image class="direction-img" src="../../image/direction.png" mode="cover"></image>
   </view>
-  <view class='item_choice'>使用手册
+  <view class='item_choice' bindtap="toUserHelp">使用手册
     <image class="direction-img" src="../../image/direction.png" mode="cover"></image>
   </view>
+  <view class="bottom-tip">Copyright @WeAreHeros 2019-2020</view>
+  <view class="bottom-tip2">南国猫觅海 版权所有</view>
 </view>

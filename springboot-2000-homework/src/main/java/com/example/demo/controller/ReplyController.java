@@ -40,6 +40,13 @@ public class ReplyController {
         replyService.insert(reply);
     }
 
+    // 插入成绩
+    @RequestMapping(value = "/putScore", method = RequestMethod.POST)
+    public void putScore(@RequestParam(value = "id") Integer id,
+                         @RequestParam(value = "factor1") Integer factor1) {
+        replyService.putScore(id, factor1);
+    }
+
     // 删除 reply
     @RequestMapping(value = "/deletByCodeid",method = RequestMethod.GET)
     public void deleteReply(@RequestParam(value="codeid") String codeid){

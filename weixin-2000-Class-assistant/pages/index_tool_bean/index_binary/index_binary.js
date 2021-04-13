@@ -1,4 +1,10 @@
 // pages/index_tool_bean/index_ binary/index_ binary.js
+
+// "usingComponents": {
+//   "i-panel": "../../dist/panel/index",
+//   "i-input": "../../dist/input/index"
+// }
+
 Page({
 
   data: {

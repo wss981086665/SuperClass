@@ -7,11 +7,14 @@
           <image src='../../image/classicon.png' class='ava-img'></image>
         </view>
         <view class='class-tip'>{{item.courseName}}</view>
+        <view class='class-code'>{{item.code}}</view>
       </view>
     </view> 
   </view>
-  <view class='noclass' hidden='{{hasvalue}}'>
-    <image class='nohome-img' src='../../image/nohome.png'></image>
+  <view hidden='{{hasvalue}}'>
+    <view class='noclass'>
+      <image class='nohome-img' src='../../image/nohome.png'></image>
+    </view>
     <view class='nohome-text'>暂时没有班级哦^_^</view>
   </view>
   <view class='tocreat-class' bindtap='toaddit'>添加新班级</view>

@@ -1,0 +1,25 @@
+<!--pages/index_checkName/checkName/checkName.wxml-->
+<view>
+  <view class="name">{{name}}</view>
+  <view class="success" hidden="{{!success}}">本次点名结果：{{name}}</view>
+  <view class="tip" >注意：本次随机点名结果仅供参考，由于生成的随机数具有不确定性，因此不保证结果的完全随机性，并且随机数产生过程完全由计算机随机产生。</view>
+
+  <view class="c-all">班级成员总数:</view>
+  <view class="tip" >学生总数为{{students.length}}位</view>
+  <view class="c-all">班级成员列表:</view>
+  <view class="c-con" wx:for="{{students}}" wx:key wx:for-index="index" wx:for-item="item">
+    <view class="s-name">{{item.name}}</view>
+  </view>
+  <i-tag 
+      class="i-tags" 
+      name="RECOMMEND" 
+      color="blue">
+      完全随机
+  </i-tag>
+  <i-tag 
+      class="i-tags" 
+      name="RECOMMEND" 
+      color="blue">
+      公正公平
+  </i-tag>
+</view>

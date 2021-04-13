@@ -17,5 +17,12 @@
       <view class='loadmore' bindtap='loadmore'>--点击加载更多--</view>
     </view>
   </view>
-  <view class='skip' hidden='{{hasvalue}}'>暂时没有结果</view>
+  <view hidden='{{hasvalue}}'>
+    <view class="no-img-con">
+      <image src="../../image/empty2.png" style="width:100%; height:100%;"></image>
+    </view>
+    <view class='skip'>暂时没有结果</view> 
+    <view class="toSearch" bindtap="toSearchWork">去搜索作业-></view>
+    <view class="toSearch" bindtap="toAddCourse">去加入班级-></view>
+  </view>
 </view>

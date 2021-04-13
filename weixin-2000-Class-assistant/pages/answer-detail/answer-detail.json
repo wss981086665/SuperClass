@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "i-input-number": "../../dist/input-number/index"
+  },
   "navigationBarTitleText": "内容",
   "navigationBarBackgroundColor": "#6A5ACD",
   "navigationBarTextStyle": "white"

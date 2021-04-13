@@ -5,12 +5,12 @@ public class Reply {
     private Integer id;
     private String codeid;  //  班级的 code 和 id
     private String openid;  // 发布人 openid
-    private String imgurl;
-    private String content;
-    private String date;
+    private String imgurl;  // 图片名称
+    private String content;  // 内容
+    private String date;    // 回复日期
     private Integer isDelete;
 
-    private String factor1;
+    private String factor1;  // 成绩
     private String factor2;
     private String factor3;
     private String factor4;

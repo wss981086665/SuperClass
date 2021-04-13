@@ -36,7 +36,10 @@
     "pages/index_tool_bean/index_binary/index_binary",
     "pages/index_tool_bean/index_timing/index_timing",
     "pages/index_tool_bean/index_compass/index_compass",
-    "pages/index_tool_bean/index_dish/index_dish"
+    "pages/index_tool_bean/index_dish/index_dish",
+    "pages/index_checkName/checkName/checkName",
+    "pages/myself-Contact/myself-Contact",
+    "pages/user_helper/user_helps"
   ],
   "window": {
     "backgroundTextStyle": "light",

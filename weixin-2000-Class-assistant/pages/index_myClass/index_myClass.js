@@ -34,7 +34,6 @@ Page({
           data: {},
           success: function (res) {
             var relations = res.data.result
-            console.log(relations)
             if (relations == null) {
               var toastText = '获取数据失败' + res.data.errMsg;
               that.setData({

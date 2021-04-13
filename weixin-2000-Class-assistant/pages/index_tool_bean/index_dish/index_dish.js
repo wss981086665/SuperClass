@@ -1,4 +1,9 @@
 // pages/index_tool_bean/index_dish/index_dish.js
+
+// "usingComponents": {
+//   "i-spin": "../../dist/spin/index"
+// }
+
 const app = getApp()
 const api = require('../../../api.js');
 
