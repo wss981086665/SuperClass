@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "解答",
-  "navigationBarBackgroundColor": "#6A5ACD",
-  "navigationBarTextStyle": "white",
-  "usingComponents": {
-    "i-message": "../../dist/message/index"
-  }
-}

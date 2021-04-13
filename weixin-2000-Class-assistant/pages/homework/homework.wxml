@@ -1,9 +1,0 @@
-<view>
-  <image src="{{homework.imgurl}}" hidden='{{!hasimage}}' data-src="{{homework.imgurl}}" class="dis-image" bindtap='previewImage' mode='aspectFill'/>
-  
-  <view class='work-tip-a'>题目</view>
-  <view class='work-tip'>{{homework.topic}}</view>
-  <view class='work-con-a'>作业内容</view>
-  <view class='work-con'>{{homework.content}}</view>
-  <view class='work-submit' bindtap='towrite'>开始写作业</view>
-</view>

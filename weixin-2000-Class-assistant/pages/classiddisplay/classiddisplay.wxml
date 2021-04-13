@@ -1,6 +1,0 @@
-<view>
-  <view class='worktip'>班级ID</view>
-  <view class='workid'>{{code}}</view>
-  <view class='workcon'>请将班级ID告知学生,学生通过所搜索班级ID即可加入到您的班级</view>
-  <view class='workbtn' bindtap='backit'>知道了</view>
-</view>

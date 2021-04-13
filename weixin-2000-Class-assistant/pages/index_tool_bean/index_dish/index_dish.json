@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "菜品识别",
-  "navigationBarBackgroundColor": "#6A5ACD",
-  "navigationBarTextStyle": "white",
-  "usingComponents": {
-    "i-spin": "../../dist/spin/index"
-  }
-}

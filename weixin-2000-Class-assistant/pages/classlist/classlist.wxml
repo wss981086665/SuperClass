@@ -1,3 +1,0 @@
-<view>
-  <view class='skip' hidden='{{hasvalue}}'>暂时没有结果</view>
-</view>

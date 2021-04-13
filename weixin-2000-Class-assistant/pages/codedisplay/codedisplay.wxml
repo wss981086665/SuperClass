@@ -1,6 +1,0 @@
-<view>
-  <view class='worktip'>作业ID</view>
-  <view class='workid'>{{code}}</view>
-  <view class='workcon'>请将作业ID告知学生,学生通过所搜索作业ID即可查找到当前您所布置的作业</view>
-  <view class='workbtn' bindtap='backit'>知道了</view>
-</view>
